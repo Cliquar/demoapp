@@ -7,18 +7,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Concert+One|Work+Sans" rel="stylesheet">
   </head>
 
   <body>
-  	<nav class="navbar navbar-default navstyles navbar-fixed-top">
-  		<div class="container-fluid">
-  			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  	<nav class="navbar navbar-default navbar-toggleable-md navbar-fixed-top">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+  		<div class="container">
+  			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 	  			<ul class="nav navbar-nav navbar-right">
-	  				<li> <a href="/static_pages/index"> Home</a></li>
-	  				<li><a href="/static_pages/about">About</a></li>
-	  				<li><a href="/static_pages/contact">Contact</a></li>
+	  				<li class="nav-item"> <a href="/static_pages/index"> Home</a></li>
+	  				<li class="nav-item"><a href="/static_pages/about">About</a></li>
+	  				<li class="nav-item"><a href="/static_pages/contact">Contact</a></li>
 	  			</ul>
 	  		</div>
   		</div>
@@ -27,5 +31,8 @@
     <footer>
     	&copy; 2017 Bike Nuremberg
     </footer>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
 </html>
