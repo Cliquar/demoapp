@@ -1,3 +1,36 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.product-name {
+	
+}
+
+.product-description {
+	font-family:'Concert One', cursive;
+}
+
+
+.product-image img{
+	max-height: 400px;
+}
+
+/* Tables */
+table {
+	font-size: 2em;
+}
+
+tr {
+	border: 1px solid black;
+	margin-left: 10px;
+}
+
+td {
+	float: left;
+	display: inline;
+}
+
+td img {
+	max-height: 200px;
+
+}
