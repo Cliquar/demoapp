@@ -5,17 +5,19 @@
 body {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Maven Pro', sans-serif;
 
 }
 
 h1 {
-	font-family: 'Concert One', cursive;
+	font-family: 'Maven Pro', sans-serif;
 	text-align: center;
 }
 
 h2 {
 	text-align: center;
+	width: 100%;
+	padding: 5px;
 }
 
 p {
@@ -33,7 +35,7 @@ p {
 .navbar-nav li {
 	padding: 5px;
 	display: inline;
-	font-family: 'Concert One', cursive;
+	font-family: 'Maven Pro', sans-serif;
 	font-size: 1.5em;
 	letter-spacing: 0.2em;	
 	font-weight: bold;

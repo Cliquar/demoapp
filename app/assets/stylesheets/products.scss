@@ -2,37 +2,55 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.product-name {
-	font-family: 'Concert One', sans-serif;
-	font-size: 2em;
-	line-height: 1em;
-}
+
 
 .product-description {
-	font-family:'Concert One', cursive;
+	color: #dee5ea;
+	margin: 20px 0 0 0;
+	width: 100%;
+	padding: 10px;
+	font-family: 'Crimson Text', serif;
+	font-style: italic;
 }
 
+.product-color {
+	font-family: 'Crimson Text', serif;
+	font-style: italic;
+	color: #dee5ea;
+	font-size: 1.8em;
+	padding: 10px;
+}
 
 .product-image img{
 	max-height: 400px;
 }
 
-/* Tables */
-table {
-	font-size: 2em;
+
+.product-item {
+	max-width: 320px;
+	min-height: 800px;
+	background-color: #233237;
+	margin: 10px;
+	padding: 0;
 }
 
-tr {
-	border: 1px solid black;
-	margin-left: 10px;
+.product-name {
+	background-color: #756cd6;
+	width: 100%;
+	margin: 0;
+	font-weight: bold;
+	color: #fff;
+	font-family: 'Maven Pro', sans-serif;
 }
 
-td {
-	float: left;
-	display: inline;
+.product-price {
+	text-align: center;
+	color: #ffc9c9;
+	font-size: 3em;
 }
 
-td img {
-	max-height: 200px;
-
+.edit-product {
+	margin: 20px 0 0 0;
+	font-size: 1em;
+	text-align: center;
 }
