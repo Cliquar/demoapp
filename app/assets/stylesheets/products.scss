@@ -2,21 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+.product-box {
+	margin: 0 auto;
+}
 
 .product-description {
-	color: #dee5ea;
+	color: black;
 	margin: 20px 0 0 0;
 	width: 100%;
 	padding: 10px;
-	font-family: 'Crimson Text', serif;
-	font-style: italic;
+	font-family: 'Archivo Narrow', serif;
+	font-style: bold;
 }
 
 .product-color {
-	font-family: 'Crimson Text', serif;
+	font-family: 'Archivo Narrow', serif;
 	font-style: italic;
-	color: #dee5ea;
+	
 	font-size: 1.8em;
 	padding: 10px;
 }
@@ -26,27 +28,30 @@
 }
 
 
+
 .product-item {
-	max-width: 320px;
+	
 	min-height: 800px;
-	background-color: #233237;
-	margin: 10px;
-	padding: 0;
+	background-color: #fff;
+	border: 2px solid #ececec;
+	box-shadow: 4px 4px 7px 0px #dddddd;
+	margin: 5px;
+	padding: 10px;
 }
 
 .product-name {
-	background-color: #756cd6;
 	width: 100%;
 	margin: 0;
 	font-weight: bold;
-	color: #fff;
-	font-family: 'Maven Pro', sans-serif;
+	color: #58e3b5;
+	font-family: 'Oleo Script', sans-serif;
 }
 
 .product-price {
 	text-align: center;
 	color: #ffc9c9;
 	font-size: 3em;
+	font-family: 'Oleo Script', sans-serif;
 }
 
 .edit-product {

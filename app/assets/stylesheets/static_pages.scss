@@ -10,8 +10,9 @@ body {
 }
 
 h1 {
-	font-family: 'Maven Pro', sans-serif;
+	font-family: 'Oleo Script', sans-serif;
 	text-align: center;
+	font-size: 4em;
 }
 
 h2 {
@@ -21,6 +22,7 @@ h2 {
 }
 
 p {
+	font-family: 'Archivo Narrow', serif;
 	font-size: 14pt;
 	line-height: 1.5;
 	text-align: justify;
@@ -35,10 +37,10 @@ p {
 .navbar-nav li {
 	padding: 5px;
 	display: inline;
-	font-family: 'Maven Pro', sans-serif;
+	font-family: 'Oswald', sans-serif;
+	font-style: bold;
 	font-size: 1.5em;
 	letter-spacing: 0.2em;	
-	font-weight: bold;
 	margin-left: 20px;
 
 } 
@@ -55,4 +57,11 @@ footer {
 
 .carousel-inner img {
 	max-height: 600px;
+}
+
+.about-section {
+	background-color: #fff;
+	border: 2px solid #ececec;
+	box-shadow: 4px 4px 7px 0px #dddddd;
+	padding: 5px;
 }

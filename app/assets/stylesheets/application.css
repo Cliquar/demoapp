@@ -16,5 +16,10 @@
 
 
 body {
-  background-color: #fff;
+  background-color: #eaeaea;
+}
+
+.navbar-brand {
+  font-family: 'Oleo Script', sans-serif;
+  font-size: 4em;
 }
