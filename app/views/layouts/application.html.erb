@@ -34,10 +34,19 @@
             <li class="nav-item"> <%= link_to "About", static_pages_about_path %></li>
             <li class="nav-item"> <%= link_to "Contact", static_pages_contact_path %> </li>
           </ul>
+          <%= form_tag("/products", method: "get", :class => "navbar-form") do %>
+          <div class="form-group">
+            <%= label_tag(:q, "Search for:") %>
+            <%= text_field_tag(:q, "",:class => "form-control") %>
+          
+            <%= submit_tag("Search", :class => "btn btn-default") %>
+            </div>
+          <% end %>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
-</nav>
-	  				
+    </nav>
+	  
+    
 	  	
     <%= yield %>
     <footer class="footer navbar-fixed-bottom">
