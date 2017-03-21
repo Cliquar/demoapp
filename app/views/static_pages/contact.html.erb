@@ -6,29 +6,7 @@
       </div><!--/header-->
         
       <!-- Contact form -->
-      <form class="col-xs-12 col-md-6 form-class" onsubmit="submitted()">
-        <div class="form-group">
-          <div class="col-xs-12 col-md-6">
-            <label for="name">Name</label>
-            <input class="form-control" type="text" placeholder="Enter your name" id="name" required>
-          </div>
-          <div class="col-xs-12 col-md-6">
-            <label for="telephone">Tel.</label>
-            <input class="form-control" type="tel" placeholder="Enter your phone number">
-          </div>
-          <div class="col-xs-12">
-            <label for="mail">E-mail</label>
-            <input class="form-control" type="email" placeholder="Enter E-Mail" id="mail" required>
-          </div>
-          <div class="col-xs-12">
-            <label>Message:</label>
-            <textarea class ="form-control message-box" placeholder="Your message here" cols="40" rows="5" minlength="20"></textarea>
-            <p id="char-count"></p>
-            <p id="visible-comment"></p>
-            <button id="submit-button" type="submit" class="btn btn-primary">Submit</button>
-          </div>
-        </div>
-      </form>
+      <%= render 'contact_form' %>
       <div class="col-xs-12 col-md-6">
         <ul class="contact-list">
           <li><span class="glyphicon glyphicon-envelope"></span> somemail@mail.me</li>
@@ -37,6 +15,6 @@
           <li><span class="glyphicon glyphicon-phone-alt"></span> +49 172 345 567 54</li>
         </ul>
       </div>
-      </div>
-    </div><!-- /container -->
-  </div><!-- /wrapper -->  
+    </div>
+  </div><!-- /container -->
+</div><!-- /wrapper -->  
