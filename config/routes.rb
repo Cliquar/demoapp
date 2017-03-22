@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   get 'static_pages/index'
   root 'static_pages#index'
-  get 'contact', to: 'static_pages#contact'
+  post 'static_pages/thank_you'
   post 'static_pages/index'
 
   resources :orders, only: [:index, :show, :create, :destroy]
