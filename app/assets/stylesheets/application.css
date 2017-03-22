@@ -23,3 +23,7 @@ body {
   font-family: 'Oleo Script', sans-serif;
   font-size: 4em;
 }
+
+.modal-backdrop {
+  z-index: 1020;
+}
