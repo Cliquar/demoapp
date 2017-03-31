@@ -13,6 +13,7 @@
       <p class="product-price col-xs-12">
         <%= @product.price %> €
       </p>
+      <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
     </div>
     <div class="col-xs-12 col-sm-4">
       <p class="product-image">
@@ -21,6 +22,8 @@
     </div>
   
   </div>
+  <%= render "new_comment" %>
+  <%= render "comments" %>
 </div>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
