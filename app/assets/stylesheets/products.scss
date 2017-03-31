@@ -9,12 +9,11 @@
 }
 
 .product-box {
-	margin: 0 auto;
+	padding: 5px;
 }
 
 .product-description {
 	color: black;
-	width: 100%;
 	padding: 10px;
 	font-family: 'Archivo Narrow', serif;
 	font-style: bold;
@@ -43,7 +42,6 @@
 }
 
 .product-name {
-	width: 100%;
 	font-weight: bold;
 	color: #58e3b5;
 	font-family: 'Oleo Script', sans-serif;
@@ -51,7 +49,7 @@
 }
 
 .product-price {
-	text-align: right;
+	text-align: center;
 	color: #ffc9c9;
 	font-size: 3em;
 	font-family: 'Oleo Script', sans-serif;
