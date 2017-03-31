@@ -67,3 +67,24 @@
 	padding: 10px;
 	width: 795px;
 }
+
+.rated {
+	padding-left: 30px;
+}
+
+.rating {
+	padding: 30px;
+}
+
+.review-container {
+	display: none;
+}
+
+h4 a {
+	color: blue;
+}
+
+h4 a:hover {
+	background-color: white;
+	color: blue;
+}
