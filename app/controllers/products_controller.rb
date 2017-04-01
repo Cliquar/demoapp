@@ -1,6 +1,8 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
+
+
   # GET /products
   # GET /products.json
   def index
@@ -10,12 +12,14 @@ class ProductsController < ApplicationController
     else
       @products = Product.all
     end
+    
   end
 
   # GET /products/1
   # GET /products/1.json
   def show
-    @comments = @product.comments.order("created_at DESC")
+    @comments = @product.comments.order("created_at DESC").paginate(:page => params[:page], :per_page => 5)
+    
   end
 
   # GET /products/new

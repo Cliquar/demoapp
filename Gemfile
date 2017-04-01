@@ -67,3 +67,6 @@ gem 'devise'
 
 #User Authorization CanCanCan
 gem 'cancancan', '~> 1.10' 
+
+#add pagination for comments
+gem 'will_paginate', '~> 3.1.0'
