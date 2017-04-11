@@ -16,8 +16,6 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-config.action_mailer.asset_host = 'https://bikenurembergdemo.herokuapp.com/'
-
 module Demoapp
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
