@@ -96,6 +96,7 @@ Rails.application.configure do
   }
 
   config.action_mailer.default_url_options = { host: 'bikenurembergdemo.herokuapp.com' }
+  config.action_mailer.asset_host = 'bikenurembergdemo.herokuapp.com'
 
   #Heroku fix for asset pipeline
   config.assets.compile = true
