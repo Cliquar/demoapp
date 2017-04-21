@@ -29,9 +29,6 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item"> <button type="button" class="btn btn-primary btn-lg navbar-right" data-toggle="modal" data-target="#myModal">
-            Login
-          </button> </li>
             <li class="nav-item"> <%= link_to "Home", root_path %></li>
             <li class="nav-item"><%= link_to "Products", products_path %></li>
             <li class="nav-item"> <%= link_to "About", static_pages_about_path %></li>
@@ -39,10 +36,10 @@
             
               <% if user_signed_in? %>
                 <li class="nav-item">
-                  <%= link_to "Logout", destroy_user_session_path, :method => :delete%>
+                  <%= link_to "Orders", "/orders" %>
                 </li>
                 <li class="nav-item">
-                  <%= link_to "Orders", "/orders" %>
+                  <%= link_to "Logout", destroy_user_session_path, :method => :delete%>
                 </li>
               <% else %>
                 <li class="nav-item">
@@ -61,34 +58,6 @@
               <%= submit_tag("Search", :class => "btn btn-default") %>
             </div>
           <% end %>
-          
-
-          <!-- Modal -->
-          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog modal-sm" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="myModalLabel">Customer Login</h4>
-                </div>
-                <div class="modal-body">
-                  <%= form_tag("/login", method: "get") do %>
-                    <%= label_tag(:q, "Username") %>
-                    <%= text_field_tag(:q) %>
-                    <%= label_tag(:q, "Password") %>
-                    <%= text_field_tag(:q) %>
-                    <%= submit_tag("Login", :class => "btn btn-primary col-xs-12") %>
-
-                  <% end %>
-
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>

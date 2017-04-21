@@ -7,7 +7,7 @@
     <hr>
     <div class="product-price"><%= product.price %> €</div>
     <div class="col-xs-12 edit-product">
-      <% if current_user.admin? %>
+      <% if user_signed_in? && current_user.admin? %>
         <%= link_to 'Show', product %>
         <%= link_to 'Edit', edit_product_path(product) %>
         <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
