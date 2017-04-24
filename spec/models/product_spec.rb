@@ -19,7 +19,7 @@ describe Product do
 
 
     it "is not valid" do
-      expect(Product.new(description: "Nice bike")).to be_valid
+      expect(Product.new(description: "Blabla")).not_to be_valid
     end
   end
 end
