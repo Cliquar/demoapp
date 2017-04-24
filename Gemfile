@@ -43,6 +43,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'sqlite3'
   ruby '2.3.3'
+  gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do
