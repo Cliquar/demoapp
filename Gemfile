@@ -36,6 +36,9 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+#stripe Api
+gem 'stripe'
+
 group :test do
   gem 'database_cleaner'
 end
