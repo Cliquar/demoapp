@@ -78,3 +78,5 @@ gem 'cancancan', '~> 1.10'
 
 #add pagination for comments
 gem 'will_paginate', '~> 3.1.0'
+
+#adds debugging
