@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe UsersController, :type => :controller do
   let(:user) { FactoryGirl.create(:user)}
-  let(:diffrent_user) {FactoryGirl.create(:user)}
+  let(:diffrent_user) { FactoryGirl.create(:user)}
 
   describe 'GET #show' do
     context 'User is logged in' do 
