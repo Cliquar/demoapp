@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   root 'static_pages#landing_page'
   post 'static_pages/thank_you'
   post 'static_pages/index'
+  post 'payments/create'
 
   resources :orders, only: [:index, :show, :create, :destroy]
 
