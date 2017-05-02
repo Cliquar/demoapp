@@ -4,8 +4,10 @@
 <div class="container product-box">
   <div class="row">
     
-    <%= render @products %>
-    
+    <% cache(cache_key_for_products) do %>
+      <%= render @products %>
+    <% end %>
+
   </div>
 </div>
 <br>
