@@ -82,4 +82,7 @@ gem 'will_paginate', '~> 3.1.0'
 #memchaching
 gem 'dalli'
 
-#adds debugging
+#add redis caching
+gem 'redis-rails'
+
+gem 'newrelic_rpm'
