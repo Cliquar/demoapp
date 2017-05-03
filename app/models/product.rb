@@ -29,7 +29,7 @@ class Product < ApplicationRecord
   end
 
   def viewed!
-    $redis.incr("product:#{id}")
+    $redis.incby("product:#{id}")
   end
 
 end
