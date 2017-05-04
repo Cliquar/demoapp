@@ -11,7 +11,7 @@
     <% end %>
     <div class="col-xs-12 col-sm-8 product-box">
       <p>
-          Views: <%= @product.views %>
+        Views: <%= @product.views %>
       </p>
       <% cache @product do %>
         <p class="product-name">
@@ -40,6 +40,7 @@
   
   </div>
   <%= render "new_comment" %>
+  <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
   <%= render "comments" %>
   
 </div>

@@ -25,7 +25,6 @@ Rails.application.configure do
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
   
-  config.cache_store = :redis_store, "redis://localhost:6379/0/cache"
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
@@ -114,4 +113,7 @@ Rails.application.configure do
                      :socket_failure_delay => 0.2,
                      :down_retry_delay => 60
                     }
+#ActionCable setup
+config.web_socket_server_url = "wss://bikenurembergdemo.herokuapp.com/cable"
+config.action_cable.allowed_request_origins = ['https://bikenurembergdemo.herokuapp.com', 'http://bikenurembergdemo.herokuapp.com']
 end
