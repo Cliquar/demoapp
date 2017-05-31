@@ -5,7 +5,7 @@ class Product < ApplicationRecord
   validates_presence_of :name 
 
   def self.search(search_term)
-    if Rails.env.development?
+    if Rails.env.development? || Rails.env.test?
       Product.where("name LIKE ?", "%#{search_term}%")
     else
       Product.where("name ilike ?", "%#{search_term}%")
