@@ -1,6 +1,5 @@
 require 'rails_helper'
 
-
 describe Product do
     
   before do
@@ -13,7 +12,6 @@ describe Product do
 
   context "when the product has comments" do
     it "returns the average of all comments" do
-
       expect(@product.average_rating).to eq 3
     end
 
