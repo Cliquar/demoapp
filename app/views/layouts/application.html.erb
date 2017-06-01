@@ -29,7 +29,7 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right nav-overflow">
             <li class="nav-item"> <%= link_to "Home", root_path %></li>
             <li class="nav-item"><%= link_to "Products", products_path %></li>
             <li class="nav-item"> <%= link_to "About", static_pages_about_path %></li>
@@ -52,7 +52,7 @@
               <% end %>
             </li>
           </ul>
-          <%= form_tag("/products", method: "get", :class => "navbar-form") do %>
+          <%= form_tag("/products", method: "get", :class => "navbar-form hidden-sm") do %>
             <div class="form-group">
               <%= text_field_tag(:q, nil, :class => "form-control") %>
               

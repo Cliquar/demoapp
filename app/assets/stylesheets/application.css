@@ -17,7 +17,7 @@
 
 body {
   background-color: #eaeaea;
-  margin-top: 22px;
+  margin-top: 16px;
   margin-bottom: 20px;
 }
 
@@ -29,7 +29,6 @@ body {
 .modal-backdrop {
   z-index: 1020;
 }
-
 
 /* Login Form */
 body {
