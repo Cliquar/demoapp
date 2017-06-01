@@ -5,11 +5,8 @@ class Product < ApplicationRecord
   validates_presence_of :name 
 
   def self.search(search_term)
-    if Rails.env.development? || Rails.env.test?
-      Product.where("name LIKE ?", "%#{search_term}%")
-    else
-      Product.where("name ilike ?", "%#{search_term}%")
-    end
+    like_operator = Rails.env.production? ? "ilike" : "LIKE"
+    Product.where("name #{like_operator} ?", "%#{search_term}%")
   end
 
   def highest_rating_comment
