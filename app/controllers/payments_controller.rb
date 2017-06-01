@@ -13,7 +13,7 @@ class PaymentsController < ApplicationController
         :description => params[:stripeEmail]
       )
 
-      if charge.paid == false
+      if charge.paid
         Order.create(product_id: @product.id, user_id: @user.id, total: @product.price)
         flash[:notice] = "Your payment was processed successfully"  
         
