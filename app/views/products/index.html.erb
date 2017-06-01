@@ -3,11 +3,7 @@
 <h1>Products</h1>
 <div class="container product-box">
   <div class="row">
-    
-    <% cache(cache_key_for_products) do %>
-      <%= render @products %>
-    <% end %>
-
+    <%= render @products %>
   </div>
 </div>
 <br>
